@@ -1,0 +1,16 @@
+{
+  "name": "sbra-office-bot",
+  "version": "1.0.0",
+  "description": "An office bot for all your needs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Schofield",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.12.0",
+    "dotenv": "^4.0.0",
+    "restify": "^6.3.4"
+  }
+}
