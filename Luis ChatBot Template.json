@@ -1,0 +1,1065 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Luis ChatBot Template",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "ChooseGender"
+    },
+    {
+      "name": "IndicateLocationOfClothingUsage"
+    },
+    {
+      "name": "IndicateStyle"
+    },
+    {
+      "name": "InitiateBot"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SpecifyDislikedColors"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ChosenGender"
+    },
+    {
+      "name": "ClothingContext"
+    },
+    {
+      "name": "DislikedColors"
+    },
+    {
+      "name": "LocationOfClothingUsage"
+    },
+    {
+      "name": "Relation"
+    },
+    {
+      "name": "Style"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hello",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "what's the weather today?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "bold",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's going on",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "what's your name?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "purple",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "black",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "male",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "female",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "brown",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "white",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "hiya",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "red",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "casual",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "blue",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "at home",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "green",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "at work",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i'll be at work",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "hey hey hey",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "trendy",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "my name is daniel",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "women's",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "classy",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "grey",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "navy",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's up bot",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "men's",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "maroon",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "none of the above",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 0,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "hi pepper",
+      "intent": "InitiateBot",
+      "entities": []
+    },
+    {
+      "text": "hazel",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "women's clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "navy blue",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "men's clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for men's clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 16,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for man clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "man clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for men's clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i'll be out on the town",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "on the town",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 0,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "i'll be on the town",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 8,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'll be at home",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "my style is classy",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "my style is bold",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "my style is trendy",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "i would say my style is casual",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 24,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i would have to say my style is casual",
+      "intent": "IndicateStyle",
+      "entities": [
+        {
+          "entity": "Style",
+          "startPos": 32,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "yes, blue and black",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 14,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "red, beige, brown, and blue",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 5,
+          "endPos": 9
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i dislike orange, red, yellow, purple, and white",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 10,
+          "endPos": 15
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 18,
+          "endPos": 20
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 23,
+          "endPos": 28
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 31,
+          "endPos": 36
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 43,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for something for my best friend",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 33,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for something for my boyfriend",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 33,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for something for my mother",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 33,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for something for my sister-in-law",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 33,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for something for my partner",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 33,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my cousin",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my nephew",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my niece",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my aunt",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my uncle",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my grandfather",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my grandmother",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my daughter",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my son",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my boyfriend",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my girlfriend",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my dad",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my brother",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my sister",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for my mom",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "Relation",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for women's clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 16,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for women's",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 16,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for women's clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for women's clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "women's clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "men's clothing please",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "male attire please",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for male attire",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for men's attire",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 16,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'll looking for female attire",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i'm shopping for male clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "male clothes",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "male clothing",
+      "intent": "ChooseGender",
+      "entities": [
+        {
+          "entity": "ChosenGender",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "it's for lounging at home",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 18,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "it's for out on the town",
+      "intent": "IndicateLocationOfClothingUsage",
+      "entities": [
+        {
+          "entity": "LocationOfClothingUsage",
+          "startPos": 13,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "light grey",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "purple, green, blue, and black",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 15,
+          "endPos": 18
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 25,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "white and red",
+      "intent": "SpecifyDislikedColors",
+      "entities": [
+        {
+          "entity": "DislikedColors",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "DislikedColors",
+          "startPos": 10,
+          "endPos": 12
+        }
+      ]
+    }
+  ]
+}
